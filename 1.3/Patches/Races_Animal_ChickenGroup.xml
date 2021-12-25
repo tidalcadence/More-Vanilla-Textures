@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  
+  <Operation Class="PatchOperationFindMod">
+    <!-- Chicks and Ducklings -->
+    <mods>
+      <li>Core</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <!--<success>Always</success>-->
+      <operations>
+
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/PawnKindDef[defName="Chicken"]/lifeStages/li[label="chick"]/bodyGraphicData/texPath</xpath>
+          <value>
+            <texPath>Things/Pawn/Animal/Chicken/MVT_Chick</texPath>
+          </value>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/PawnKindDef[defName="Chicken"]/lifeStages/li[label="chick"]/bodyGraphicData/color</xpath>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/PawnKindDef[defName="Chicken"]/lifeStages/li[label="chick"]/dessicatedBodyGraphicData/texPath</xpath>
+          <value>
+            <texPath>Things/Pawn/Animal/Chicken/Dessicated_MVT_Chick_east</texPath>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/PawnKindDef[defName="Duck"]/lifeStages/li[label="duckling"]/bodyGraphicData/texPath</xpath>
+          <value>
+            <texPath>Things/Pawn/Animal/Duck/MVT_Duckling</texPath>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/PawnKindDef[defName="Duck"]/lifeStages/li[label="duckling"]/dessicatedBodyGraphicData/texPath</xpath>
+          <value>
+            <texPath>Things/Pawn/Animal/Duck/Dessicated_MVT_Duckling_east</texPath>
+          </value>
+        </li>
+        
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>

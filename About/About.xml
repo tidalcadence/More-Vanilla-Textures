@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>More Vanilla Textures</name>
+	<author>Tidal</author>
+	<supportedVersions>
+		<li>1.3</li>
+	</supportedVersions>
+	<packageId>tidal.morevanilla.textures</packageId>
+	<description>Adds crisp, updated textures for a variety of vanilla animals and items, as well as new baby animal graphics.</description>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+	</loadAfter>
+</ModMetaData>

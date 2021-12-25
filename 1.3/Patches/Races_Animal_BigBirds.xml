@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  
+  <Operation Class="PatchOperationFindMod">
+    <!-- Ostrich, Emu, and Cassowary -->
+    <mods>
+      <li>Core</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <!--<success>Always</success>-->
+      <operations>
+
+        <!-- Ostrich -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/PawnKindDef[defName="Ostrich"]/lifeStages/li[0]/bodyGraphicData/texPath</xpath>
+          <value>
+            <texPath>Things/Pawn/Animal/Ostrich/MVT_OstrichChick</texPath>
+          </value>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/PawnKindDef[defName="Ostrich"]/lifeStages/li[0]/bodyGraphicData/color</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/PawnKindDef[defName="Ostrich"]/lifeStages/li[0]/bodyGraphicData/shaderType</xpath>
+        </li>
+
+        <!-- Emu -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/PawnKindDef[defName="Emu"]/lifeStages/li[0]/bodyGraphicData/texPath</xpath>
+          <value>
+            <texPath>Things/Pawn/Animal/Emu/MVT_EmuChick</texPath>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/PawnKindDef[defName="Emu"]/lifeStages/li[0]/dessicatedBodyGraphicData/texPath</xpath>
+          <value>
+            <texPath>Things/Pawn/Animal/Emu/Dessicated_MVT_EmuChick_east</texPath>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/PawnKindDef[defName="Emu"]</xpath>
+          <value>
+            <alternateGraphicChance>1</alternateGraphicChance>
+            <alternateGraphics>
+              <li>
+                <color>(76,76,76)</color>
+              </li>
+              <li>
+                <color>(127,127,127)</color>
+              </li>
+              <li>
+                <color>(126,137,136)</color>
+              </li>
+              <li>
+                <color>(134,154,155)</color>
+              </li>
+              <li>
+                <color>(134,154,155)</color>
+              </li>
+              <li>
+                <color>(112,153,157)</color>
+              </li>
+              <li>
+                <color>(112,153,157)</color>
+              </li>
+              <li>
+                <color>(112,153,157)</color>
+              </li>
+              <li>
+                <color>(158,172,173)</color>
+              </li>
+            </alternateGraphics>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/PawnKindDef[defName="Emu"]/lifeStages/li[1]/bodyGraphicData/texPath</xpath>
+          <value>
+            <texPath>Things/Pawn/Animal/Emu/MVT_EmuJuvenile</texPath>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/PawnKindDef[defName="Emu"]/lifeStages/li[2]/bodyGraphicData</xpath>
+          <value>
+            <color>(112,153,157)</color>
+            <shaderType>CutoutComplex</shaderType>
+          </value>
+        </li>
+
+        <!-- Cassowary -->
+
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/PawnKindDef[defName="Cassowary"]/lifeStages/li[0]/bodyGraphicData/texPath</xpath>
+          <value>
+            <texPath>Things/Pawn/Animal/Cassowary/MVT_CassowaryChick</texPath>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/PawnKindDef[defName="Cassowary"]/lifeStages/li[0]/dessicatedBodyGraphicData/texPath</xpath>
+          <value>
+            <texPath>Things/Pawn/Animal/Cassowary/Dessicated_MVT_CassowaryChick_east</texPath>
+          </value>
+        </li>
+        
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>
