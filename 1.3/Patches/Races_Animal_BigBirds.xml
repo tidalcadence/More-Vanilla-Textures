@@ -14,7 +14,7 @@
         <li Class="PatchOperationReplace">
           <xpath>/Defs/PawnKindDef[defName="Ostrich"]/lifeStages/li[0]/bodyGraphicData/texPath</xpath>
           <value>
-            <texPath>Things/Pawn/Animal/Ostrich/MVT_OstrichChick</texPath>
+            <texPath>Things/Pawn/Animal/Ostrich/OstrichChick</texPath>
           </value>
         </li>
         <li Class="PatchOperationRemove">
@@ -28,13 +28,13 @@
         <li Class="PatchOperationReplace">
           <xpath>/Defs/PawnKindDef[defName="Emu"]/lifeStages/li[0]/bodyGraphicData/texPath</xpath>
           <value>
-            <texPath>Things/Pawn/Animal/Emu/MVT_EmuChick</texPath>
+            <texPath>Things/Pawn/Animal/Emu/EmuChick</texPath>
           </value>
         </li>
         <li Class="PatchOperationReplace">
           <xpath>/Defs/PawnKindDef[defName="Emu"]/lifeStages/li[0]/dessicatedBodyGraphicData/texPath</xpath>
           <value>
-            <texPath>Things/Pawn/Animal/Emu/Dessicated_MVT_EmuChick_east</texPath>
+            <texPath>Things/Pawn/Animal/Emu/Dessicated_EmuChick_east</texPath>
           </value>
         </li>
         <li Class="PatchOperationAdd">
@@ -75,7 +75,7 @@
         <li Class="PatchOperationReplace">
           <xpath>/Defs/PawnKindDef[defName="Emu"]/lifeStages/li[1]/bodyGraphicData/texPath</xpath>
           <value>
-            <texPath>Things/Pawn/Animal/Emu/MVT_EmuJuvenile</texPath>
+            <texPath>Things/Pawn/Animal/Emu/EmuJuvenile</texPath>
           </value>
         </li>
         <li Class="PatchOperationAdd">
@@ -91,13 +91,13 @@
         <li Class="PatchOperationReplace">
           <xpath>/Defs/PawnKindDef[defName="Cassowary"]/lifeStages/li[0]/bodyGraphicData/texPath</xpath>
           <value>
-            <texPath>Things/Pawn/Animal/Cassowary/MVT_CassowaryChick</texPath>
+            <texPath>Things/Pawn/Animal/Cassowary/CassowaryChick</texPath>
           </value>
         </li>
         <li Class="PatchOperationReplace">
           <xpath>/Defs/PawnKindDef[defName="Cassowary"]/lifeStages/li[0]/dessicatedBodyGraphicData/texPath</xpath>
           <value>
-            <texPath>Things/Pawn/Animal/Cassowary/Dessicated_MVT_CassowaryChick_east</texPath>
+            <texPath>Things/Pawn/Animal/Cassowary/Dessicated_CassowaryChick_east</texPath>
           </value>
         </li>
         
