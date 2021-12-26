@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <!-- Elephant Tusk -->
+    <mods>
+      <li>Core</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+
+        <!-- Elephant Tusk -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="ElephantTusk"]/graphicClass</xpath>
+          <value>
+            <graphicClass>Graphic_StackCount</graphicClass>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>
