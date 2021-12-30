@@ -10,10 +10,11 @@
       <!--<success>Always</success>-->
       <operations>
 
+        <!-- Chick -->
         <li Class="PatchOperationReplace">
           <xpath>/Defs/PawnKindDef[defName="Chicken"]/lifeStages/li[label="chick"]/bodyGraphicData/texPath</xpath>
           <value>
-            <texPath>Things/Pawn/Animal/Chicken/MVT_Chick</texPath>
+            <texPath>Things/Pawn/Animal/Chicken/Chick</texPath>
           </value>
         </li>
         <li Class="PatchOperationRemove">
@@ -22,20 +23,15 @@
         <li Class="PatchOperationReplace">
           <xpath>/Defs/PawnKindDef[defName="Chicken"]/lifeStages/li[label="chick"]/dessicatedBodyGraphicData/texPath</xpath>
           <value>
-            <texPath>Things/Pawn/Animal/Chicken/Dessicated_MVT_Chick_east</texPath>
+            <texPath>Things/Pawn/Animal/Chicken/Dessicated_Chick_east</texPath>
           </value>
         </li>
 
+        <!-- Duckling -->
         <li Class="PatchOperationReplace">
           <xpath>/Defs/PawnKindDef[defName="Duck"]/lifeStages/li[label="duckling"]/bodyGraphicData/texPath</xpath>
           <value>
-            <texPath>Things/Pawn/Animal/Duck/MVT_Duckling</texPath>
-          </value>
-        </li>
-        <li Class="PatchOperationReplace">
-          <xpath>/Defs/PawnKindDef[defName="Duck"]/lifeStages/li[label="duckling"]/dessicatedBodyGraphicData/texPath</xpath>
-          <value>
-            <texPath>Things/Pawn/Animal/Duck/Dessicated_MVT_Duckling_east</texPath>
+            <texPath>Things/Pawn/Animal/Duck/Duckling</texPath>
           </value>
         </li>
         
