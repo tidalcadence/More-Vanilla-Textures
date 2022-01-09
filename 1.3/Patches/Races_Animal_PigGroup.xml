@@ -2,7 +2,7 @@
 <Patch>
 
   	<Operation Class="PatchOperationFindMod">
-     	<!-- Ostrich, Emu, and Cassowary -->
+     	<!-- Gazelle -->
 		<mods>
 			<li>Core</li>
 		</mods>

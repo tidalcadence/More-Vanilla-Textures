@@ -12,9 +12,15 @@
 
         <!-- Elephant Tusk -->
         <li Class="PatchOperationReplace">
-          <xpath>/Defs/ThingDef[defName="ElephantTusk"]/graphicClass</xpath>
+          <xpath>/Defs/ThingDef[defName="ElephantTusk"]/graphicData/graphicClass</xpath>
           <value>
             <graphicClass>Graphic_StackCount</graphicClass>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="ElephantTusk"]/graphicData/texPath</xpath>
+          <value>
+            <texPath>MVT/ElephantTusk</texPath>
           </value>
         </li>
 

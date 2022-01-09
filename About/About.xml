@@ -6,11 +6,10 @@
 		<li>1.3</li>
 	</supportedVersions>
 	<packageId>tidal.morevanilla.textures</packageId>
-	<description>Updates vanilla textures and adds new varieties and graphics, all at 2x vanilla resolution.</description>
+	<description>Updates vanilla textures to be higher resolution and have more variety.</description>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Royalty</li>
 		<li>Ludeon.RimWorld.Ideology</li>
-		<li>vanillaexpanded.vtexe</li>
 	</loadAfter>
 </ModMetaData>
