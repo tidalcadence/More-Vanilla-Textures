@@ -1,64 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-  	<Operation Class="PatchOperationFindMod">
-     	<!-- Gazelle -->
-		<mods>
-			<li>Core</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
-
-				<!-- Gazelle -->
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/PawnKindDef[defName="Gazelle"]/lifeStages/li[1]/bodyGraphicData/texPath</xpath>
-					<value>
-						<texPath>Things/Pawn/Animal/Gazelle/GazelleCalf</texPath>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/PawnKindDef[defName="Gazelle"]/lifeStages/li[1]/dessicatedBodyGraphicData/texPath</xpath>
-					<value>
-						<texPath>Things/Pawn/Animal/Gazelle/Dessicated_GazelleCalf</texPath>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/PawnKindDef[defName="Gazelle"]/lifeStages/li[2]</xpath>
-					<value>
-						<femaleGraphicData>
-							<texPath>Things/Pawn/Animal/Gazelle/GazelleFemale</texPath>
-							<drawSize>1.3</drawSize>
-							<shadowData>
-								<volume>(0.3, 0.3, 0.3)</volume>
-								<offset>(0,0,-0.3)</offset>
-							</shadowData>
-						</femaleGraphicData>
-						<femaleDessicatedBodyGraphicData>
-							<texPath>Things/Pawn/Animal/Gazelle/Dessicated_GazelleFemale</texPath>
-							<drawSize>1.3</drawSize>
-						</femaleDessicatedBodyGraphicData>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/PawnKindDef[defName="Gazelle"]/lifeStages/li[3]</xpath>
-					<value>
-						<femaleGraphicData>
-							<texPath>Things/Pawn/Animal/Gazelle/GazelleFemale</texPath>
-							<drawSize>1.65</drawSize>
-							<shadowData>
-								<volume>(0.4, 0.4, 0.4)</volume>
-								<offset>(0,0,-0.2)</offset>
-							</shadowData>
-						</femaleGraphicData>
-						<femaleDessicatedBodyGraphicData>
-							<texPath>Things/Pawn/Animal/Gazelle/Dessicated_GazelleFemale</texPath>
-							<drawSize>1.65</drawSize>
-						</femaleDessicatedBodyGraphicData>
-					</value>
-				</li>
-
-			</operations>
-		</match>
+	<!-- Gazelle -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/PawnKindDef[defName="Gazelle"]/lifeStages/li[1]/bodyGraphicData/texPath</xpath>
+		<value>
+			<texPath>Things/Pawn/Animal/Gazelle/GazelleCalf</texPath>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/PawnKindDef[defName="Gazelle"]/lifeStages/li[1]/dessicatedBodyGraphicData/texPath</xpath>
+		<value>
+			<texPath>Things/Pawn/Animal/Gazelle/Dessicated_GazelleCalf</texPath>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/PawnKindDef[defName="Gazelle"]/lifeStages/li[2]</xpath>
+		<value>
+			<femaleGraphicData>
+				<texPath>Things/Pawn/Animal/Gazelle/GazelleFemale</texPath>
+				<drawSize>1.3</drawSize>
+				<shadowData>
+					<volume>(0.3, 0.3, 0.3)</volume>
+					<offset>(0,0,-0.3)</offset>
+				</shadowData>
+			</femaleGraphicData>
+			<femaleDessicatedBodyGraphicData>
+				<texPath>Things/Pawn/Animal/Gazelle/Dessicated_GazelleFemale</texPath>
+				<drawSize>1.3</drawSize>
+			</femaleDessicatedBodyGraphicData>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/PawnKindDef[defName="Gazelle"]/lifeStages/li[3]</xpath>
+		<value>
+			<femaleGraphicData>
+				<texPath>Things/Pawn/Animal/Gazelle/GazelleFemale</texPath>
+				<drawSize>1.65</drawSize>
+				<shadowData>
+					<volume>(0.4, 0.4, 0.4)</volume>
+					<offset>(0,0,-0.2)</offset>
+				</shadowData>
+			</femaleGraphicData>
+			<femaleDessicatedBodyGraphicData>
+				<texPath>Things/Pawn/Animal/Gazelle/Dessicated_GazelleFemale</texPath>
+				<drawSize>1.65</drawSize>
+			</femaleDessicatedBodyGraphicData>
+		</value>
 	</Operation>
 
 </Patch>

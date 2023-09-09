@@ -1,30 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
-  <Operation Class="PatchOperationFindMod">
-    <!-- Elephant Tusk -->
-    <mods>
-      <li>Core</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
-
-        <!-- Elephant Tusk -->
-        <li Class="PatchOperationReplace">
-          <xpath>/Defs/ThingDef[defName="ElephantTusk"]/graphicData/graphicClass</xpath>
-          <value>
-            <graphicClass>Graphic_StackCount</graphicClass>
-          </value>
-        </li>
-        <li Class="PatchOperationReplace">
-          <xpath>/Defs/ThingDef[defName="ElephantTusk"]/graphicData/texPath</xpath>
-          <value>
-            <texPath>MVT/ElephantTusk</texPath>
-          </value>
-        </li>
-
-      </operations>
-    </match>
+  <!-- Elephant Tusk -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ElephantTusk"]/graphicData/graphicClass</xpath>
+    <value>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="ElephantTusk"]/graphicData/texPath</xpath>
+    <value>
+      <texPath>MVT/ElephantTusk</texPath>
+    </value>
   </Operation>
 
 </Patch>
