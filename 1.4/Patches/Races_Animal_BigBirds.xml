@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  <!-- Ostrich -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/PawnKindDef[defName="Ostrich"]/lifeStages/li[1]/bodyGraphicData/texPath</xpath>
+    <value>
+      <texPath>Things/Pawn/Animal/Ostrich/OstrichChick</texPath>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="EggOstrichFertilized"]/graphicData/drawSize</xpath>
+    <value>
+      <drawSize>1.0</drawSize>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="EggOstrichFertilized"]/graphicData</xpath>
+    <value>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggOstrich</texPath>
+    </value>
+  </Operation>
+
+  <!-- Emu -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PawnKindDef[defName="Emu"]/lifeStages/li[1]/bodyGraphicData</xpath>
+    <value>
+      <color>(250,1,1)</color>
+      <shaderType>CutoutComplex</shaderType>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PawnKindDef[defName="Emu"]/lifeStages/li[2]/bodyGraphicData</xpath>
+    <value>
+      <color>(250,1,1)</color>
+      <shaderType>CutoutComplex</shaderType>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/PawnKindDef[defName="Emu"]/lifeStages/li[1]/bodyGraphicData/texPath</xpath>
+    <value>
+      <texPath>Things/Pawn/Animal/Emu/EmuChick</texPath>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/PawnKindDef[defName="Emu"]/lifeStages/li[1]/dessicatedBodyGraphicData/texPath</xpath>
+    <value>
+      <texPath>Things/Pawn/Animal/Emu/Dessicated_EmuChick_east</texPath>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PawnKindDef[defName="Emu"]</xpath>
+    <value>
+      <alternateGraphicChance>1</alternateGraphicChance>
+      <alternateGraphics>
+        <li>
+          <color>(76,76,76)</color>
+        </li>
+        <li>
+          <color>(127,127,127)</color>
+        </li>
+        <li>
+          <color>(126,137,136)</color>
+        </li>
+        <li>
+          <color>(134,154,155)</color>
+        </li>
+        <li>
+          <color>(134,154,155)</color>
+        </li>
+        <li>
+          <color>(112,153,157)</color>
+        </li>
+        <li>
+          <color>(112,153,157)</color>
+        </li>
+        <li>
+          <color>(112,153,157)</color>
+        </li>
+        <li>
+          <color>(112,153,157)</color>
+        </li>
+        <li>
+          <color>(112,153,157)</color>
+        </li>
+        <li>
+          <color>(112,153,157)</color>
+        </li>
+        <li>
+          <color>(158,172,173)</color>
+        </li>
+      </alternateGraphics>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/PawnKindDef[defName="Emu"]/lifeStages/li[2]/bodyGraphicData/texPath</xpath>
+    <value>
+      <texPath>Things/Pawn/Animal/Emu/EmuJuvenile</texPath>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PawnKindDef[defName="Emu"]/lifeStages/li[3]/bodyGraphicData</xpath>
+    <value>
+      <color>(112,153,157)</color>
+      <shaderType>CutoutComplex</shaderType>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="EggEmuFertilized"]/graphicData/drawSize</xpath>
+    <value>
+      <drawSize>1.0</drawSize>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="EggEmuFertilized"]/graphicData</xpath>
+    <value>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggFootball</texPath>
+    </value>
+  </Operation>
+
+  <!-- Cassowary -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/PawnKindDef[defName="Cassowary"]/lifeStages/li[1]/bodyGraphicData/texPath</xpath>
+    <value>
+      <texPath>Things/Pawn/Animal/Cassowary/CassowaryChick</texPath>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/PawnKindDef[defName="Cassowary"]/lifeStages/li[1]/dessicatedBodyGraphicData/texPath</xpath>
+    <value>
+      <texPath>Things/Pawn/Animal/Cassowary/Dessicated_CassowaryChick_east</texPath>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="EggCassowaryFertilized"]/graphicData/drawSize</xpath>
+    <value>
+      <drawSize>1.0</drawSize>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="EggCassowaryFertilized"]/graphicData</xpath>
+    <value>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggFootball</texPath>
+    </value>
+  </Operation>
+</Patch>
